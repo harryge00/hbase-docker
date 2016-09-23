@@ -19,6 +19,9 @@ VOLUME /data
 
 ADD ./hbase-site.xml /opt/hbase/conf/hbase-site.xml
 
+ADD ./regionservers /opt/hbase/conf/regionservers
+ADD ./backup-masters /opt/hbase/conf/backup-masters
+
 ADD ./zoo.cfg /opt/hbase/conf/zoo.cfg
 
 ADD ./hbase-server /opt/hbase-server
